@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- html5 -->
+<html>
+<head>
+  <meta charset="UTF-8"> <!-- 文字コード -->
+  <meta name="viewport" content="width=device-width">　<!-- 幅の設定 -->
+  <title>入会申し込み</title>
+  <link ref="syylesheet" href="css/sanitize.css"> <!-- デフォルトcssを無効化　リンクタグは一番上-->
+  <link rel="stylesheet" href="css/style.css">  <!-- 外部参照のリンク先 -->
+  <!-- 内部参照 -->
+  <style> 
+    /* p {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 50px;
+    } */
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>入会申し込み</h1>
+    <!-- インラインスタイルシート記述例 -->
+    <!-- <h1 style="font-size: 24px; margin: 50px;">入会申し込み</h1> -->
+    <p>入会するには、次のフォームに必要事項をご記入ください</p>
+    <div class="control">
+      <!-- input要素にidを設定し、labei要素のfor属性でそのidを指定する 参考：https://style.potepan.com/articles/20037.html-->
+      <label for="mymail">メールアドレス　必須</label>
+      <input id="mymail" type="email" name="mymail">
+    </div>
+    <div class="control">
+      <label for="password">パスワード　必須</label>
+      <input id="password" type="password" name="password">
+    </div>
+    <div>
+      <button type="submit">登録する</button>
+    </div>
+  </div>
+</body>
+</html>
